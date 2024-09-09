@@ -76,7 +76,7 @@ def save_to_favorites(movie):
 
     try:
         cursor.execute(
-            "INSERT INTO favorite_movies (title, year) VALUES (%s, %s)",
+            "INSERT INTO my_favorite_movies (title, year) VALUES (%s, %s)",
             (title.strip(), year)
         )
         db.commit()
@@ -215,4 +215,3 @@ CREATE TABLE my_favorite_movies (
 
 ## UI of the project:
 ![](what_to_watch_img.jpg)
-
